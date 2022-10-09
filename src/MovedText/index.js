@@ -27,6 +27,7 @@ class Stage {
     render(){
         this.ctx.clearRect(0,0,this.cvsWidth,this.cvsHeight)
         this.textPoor.textList.forEach((text,index)=>{
+            // 从当前位置向鼠标位置靠拢
             text.setPosition(this.mouseX,this.mouseY,index)
             text.draw()
         })
